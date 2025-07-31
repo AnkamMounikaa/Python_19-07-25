@@ -1,0 +1,84 @@
+# 1. Class: Book
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def display_info(self):
+        print(f"Title: {self.title}, Author: {self.author}, Pages: {self.pages}")
+
+book1 = Book("Wings of Fire", "A.P.J. Abdul Kalam", 180)
+book1.display_info()
+
+# 2. Class: Car
+
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def start_engine(self):
+        print(f"{self.brand} {self.model}'s engine started.")
+
+    def display_car(self):
+        print(f"Car: {self.brand}, Model: {self.model}, Year: {self.year}")
+car1 = Car("Tesla", "Model 3", 2022)
+car1.start_engine()
+car1.display_car()
+
+# 3. Class: Student
+
+class Student:
+    def __init__(self, name, roll_no, course):
+        self.name = name
+        self.roll_no = roll_no
+        self.course = course
+
+    def enroll(self):
+        print(f"{self.name} enrolled in {self.course} course.")
+
+    def display(self):
+        print(f"Name: {self.name}, Roll No: {self.roll_no}, Course: {self.course}")
+student1 = Student("Mounika", "213B1A0408", "Python")
+student1.enroll()
+student1.display()
+
+# 4. Class: Calculator
+
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def multiply(self, a, b):
+        return a * b
+
+    def subtract(self, a, b):
+        return a - b
+
+    def divide(self, a, b):
+        if b != 0:
+            return a / b
+        else:
+            return "Division by zero error"
+
+calc = Calculator()
+print("Addition:", calc.add(10, 5))
+print("Division:", calc.divide(10, 2))
+
+# 5. Class: Recipe
+
+class Recipe:
+    def __init__(self, name, ingredients):
+        self.name = name
+        self.ingredients = ingredients
+
+    def display_recipe(self):
+        print(f"Recipe: {self.name}")
+        print("Ingredients:")
+        for item in self.ingredients:
+            print(f"- {item}")
+
+recipe = Recipe("Pasta", ["Pasta", "Tomato Sauce", "Cheese"])
+recipe.display_recipe()
